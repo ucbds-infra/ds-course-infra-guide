@@ -1,6 +1,22 @@
 - file: intro
-- file: content
+
+- header: Jupyterhub
+- file: jupyterhub/intro
   sections:
-    - file: markdown
-    - file: notebooks
-- file: syntax
+    - file: jupyterhub/choosing_cloud
+    - file: jupyterhub/setup_jupyterhub
+      expand_sections: true
+      sections:
+        - file: jupyterhub/tljh_customize_environment
+        - file: jupyterhub/k8s_customize_hub_environment
+    - file: jupyterhub/administering
+    - file: jupyterhub/jupyterhub_devops
+    - file: jupyterhub/data8
+
+- header: Autograding
+- file: autograding/intro
+  sections:
+    - file: autograding/okpy
+    - file: autograding/otter
+
+- file: faq

@@ -1,7 +1,7 @@
 # Book settings
-title: My sample book
-author: The Jupyter Book Community
-logo: 'images/logo.png'
+title: The Educator’s Guide to Technology Infrastructure for Data 8
+author: UC Berkeley Data Science Education Program
+logo: 'images/data8.png'
 
 latex:
   latex_documents:

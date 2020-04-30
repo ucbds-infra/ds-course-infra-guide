@@ -54,7 +54,7 @@ Managing these resources primarily utilizes the following pieces of open-source 
 
 * **Course textbook** - The Data 8 textbook is hosted online at [https://inferentialthinking.com]. It exists
   in a [GitHub repository](https://github.com/data-8/textbook). The book consists entirely of Jupyter Notebooks
-  that are converted into an HTML book with an open source tool called [Jupyter Book](https://jupyter.org/jupyter-book/).
+  that are converted into an HTML book with an open source tool called [Jupyter Book](https://jupyterbook.org/intro.html).
 
 * **Interactivity and widgets** - The course often uses interactive visualizations and interfaces to let students explore particular concepts or analytic techniques. These are carried out with Jupyter Widgets, which make it easy to create simple interfaces that allow for interactive exploration without requiring students to write code.
 

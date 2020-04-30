@@ -1,10 +1,10 @@
 # JupyterHub Overview
 
-This section describes the process of configuring and deploying your own Jupyterhub. It gives an overview of how to make important design decisions, such as where to deploy your hub and what Hub size is needed. 
+This section describes the process of configuring and deploying your own Jupyterhub. It gives an overview of how to make important design decisions, such as where to deploy your hub and what Hub size is needed.
 
 [**JupyterHub**](https://zero-to-jupyterhub.readthedocs.io/en/latest/) is a multi-user Hub that allows students to interact with their own computing environment. It makes it easy to spawn and manage multiple instances of a Jupyter notebook.
 
-## Why JupyterHub?
+## Why JupyterHub
 
 [Data 8](http://data8.org/) started with 60 students in Fall 2015, and now has 1350 students as of Spring 2020. The course operates on a scale and level of complexity that required several technological improvements to our current teaching toolset. The Data 8 team worked closely with various open-source projects in order to contribute to tools that are broadly useful.
 

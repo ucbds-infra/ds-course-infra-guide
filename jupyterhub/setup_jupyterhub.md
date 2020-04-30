@@ -5,7 +5,7 @@ computational environment. Each student will have their own account with their o
 covers how to set up a JupyterHub that runs the environment needed for
 Data 8.
 
-## What distribution of JupyterHub should I use?
+## What distribution of JupyterHub should I use
 
 JupyterHub has a few "distributions" that make it easy to set up on a particular
 kind of cloud infrastructure. Which one you choose will depend on your use case.
@@ -23,7 +23,7 @@ course materials.
 ### Deploy JupyterHub on a single VM ( <= 50 students)
 
 For classes with 50 or fewer students we recommend
-[**The Littlest JupyterHub**](https://the-littlest-jupyterhub.readthedocs.io/en/latest/), which deploys JupyterHub on a single virtual machine (VM). To set up The Littlest JupyterHub, follow the [installation guide](https://the-littlest-jupyterhub.readthedocs.io/en/latest/install/index.html) specific to the cloud provider you are using to deploy a JupyterHub with a publicly-accessible IP address. 
+[**The Littlest JupyterHub**](https://the-littlest-jupyterhub.readthedocs.io/en/latest/), which deploys JupyterHub on a single virtual machine (VM). To set up The Littlest JupyterHub, follow the [installation guide](https://the-littlest-jupyterhub.readthedocs.io/en/latest/install/index.html) specific to the cloud provider you are using to deploy a JupyterHub with a publicly-accessible IP address.
 
 ### Deploy JupyterHub on Kubernetes ( > 50 students)
 
@@ -46,8 +46,7 @@ in the Z2JH guide, and are aslo listed below for clarity):
 * [Install JupyterHub](https://zero-to-jupyterhub.readthedocs.io/en/latest/setup-jupyterhub.html),
   which gives us a fully-functional (though bare-bones) JupyterHub installation!
 
-
-## What kind of hardware should I use?
+## What kind of hardware should I use
 
 One of the first things you will need to do when setting up JupyterHub is to choose the kind
 of machines on which you will run the course infrastructure. For the Littlest JupyterHub there are a lot of choices to be made. You will need to decide what kinds of compute, storage, and memory usage requirements you anticipate. For Kubernetes there is an added dimension of clusters to consider when provisioning multiple nodes. Do you want fewer machines with a lot of RAM? Do you want machines with really fast CPUs? For
@@ -59,30 +58,14 @@ we have found that RAM is often the biggest bottleneck for a course like Data 8.
 choosing machines which have a larger amount of RAM (and using fewer of them in the course, since
 each machine will be able to accommodate more students).
 
-
 <!--- Link Atharva JH guide when published -->
-## How much will this cost?
+## How much will this cost
 
 There are many factors that go into assessing how much it will cost to deploy
 Data 8 for your course. The biggest of these are CPU and RAM that each student
 will need to have available. For details on how choices of hardware using Kubernetes affect the cost of the
 deployment, we recommend checking out the [Zero to JupyterHub deployment costs guide](https://zero-to-jupyterhub.readthedocs.io/en/latest/cost.html).
 
+## Next steps
 
-<!--- Remove when rest of guide includes TLJH -->
-## A note on the rest of this guide
-
-Note that while we have shown two options for deploying JupyterHub above,
-the rest of this guide will focus on **deploying JupyterHub with Kubernetes**.
-This is because running a JupyterHub on Kubernetes is more complex,
-and warrants more guidance. However, if you are deploying a JupyterHub on a single VM
-with The Littlest JupyterHub, you can follow along to determine the environment
-needed to run your course.
-
-## Next step
-Now that we have a running JupyterHub, the next step is
-to [customize your JupyterHub environment](customize_hub_environment).
-
-```python
-
-```
+Now that we have a running JupyterHub, the next step is to choose either a customized JupyterHub with [The Littlest JupyterHub deployment](./tljh_customize_deployment) (for total classroom sizes <50 students) or a [Kubernetes deployment](./k8s_customize_hub_environment) (for total classroom sizes >=50 students).

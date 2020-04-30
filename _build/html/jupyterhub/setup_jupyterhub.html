@@ -176,7 +176,7 @@
     <ul class="nav section-nav flex-column">
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#what-distribution-of-jupyterhub-should-i-use" class="nav-link">What distribution of JupyterHub should I use?</a><ul class="nav section-nav flex-column">
+            <a href="#what-distribution-of-jupyterhub-should-i-use" class="nav-link">What distribution of JupyterHub should I use</a><ul class="nav section-nav flex-column">
                 
         <li class="nav-item toc-entry toc-h3">
             <a href="#deploy-jupyterhub-on-a-single-vm-50-students" class="nav-link">Deploy JupyterHub on a single VM ( <= 50 students)</a>
@@ -190,19 +190,15 @@
         </li>
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#what-kind-of-hardware-should-i-use" class="nav-link">What kind of hardware should I use?</a>
+            <a href="#what-kind-of-hardware-should-i-use" class="nav-link">What kind of hardware should I use</a>
         </li>
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#how-much-will-this-cost" class="nav-link">How much will this cost?</a>
+            <a href="#how-much-will-this-cost" class="nav-link">How much will this cost</a>
         </li>
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#a-note-on-the-rest-of-this-guide" class="nav-link">A note on the rest of this guide</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#next-step" class="nav-link">Next step</a>
+            <a href="#next-steps" class="nav-link">Next steps</a>
         </li>
     
     </ul>
@@ -223,7 +219,7 @@ computational environment. Each student will have their own account with their o
 covers how to set up a JupyterHub that runs the environment needed for
 Data 8.</p>
 <div class="section" id="what-distribution-of-jupyterhub-should-i-use">
-<h2>What distribution of JupyterHub should I use?<a class="headerlink" href="#what-distribution-of-jupyterhub-should-i-use" title="Permalink to this headline">¶</a></h2>
+<h2>What distribution of JupyterHub should I use<a class="headerlink" href="#what-distribution-of-jupyterhub-should-i-use" title="Permalink to this headline">¶</a></h2>
 <p>JupyterHub has a few “distributions” that make it easy to set up on a particular
 kind of cloud infrastructure. Which one you choose will depend on your use case.
 This section provides some information to help you decide.</p>
@@ -262,7 +258,7 @@ which gives us a fully-functional (though bare-bones) JupyterHub installation!</
 </div>
 </div>
 <div class="section" id="what-kind-of-hardware-should-i-use">
-<h2>What kind of hardware should I use?<a class="headerlink" href="#what-kind-of-hardware-should-i-use" title="Permalink to this headline">¶</a></h2>
+<h2>What kind of hardware should I use<a class="headerlink" href="#what-kind-of-hardware-should-i-use" title="Permalink to this headline">¶</a></h2>
 <p>One of the first things you will need to do when setting up JupyterHub is to choose the kind
 of machines on which you will run the course infrastructure. For the Littlest JupyterHub there are a lot of choices to be made. You will need to decide what kinds of compute, storage, and memory usage requirements you anticipate. For Kubernetes there is an added dimension of clusters to consider when provisioning multiple nodes. Do you want fewer machines with a lot of RAM? Do you want machines with really fast CPUs? For
 example, here is a list of <a class="reference external" href="https://cloud.google.com/compute/docs/machine-types">all google cloud machine types</a>
@@ -274,29 +270,15 @@ each machine will be able to accommodate more students).</p>
 <!--- Link Atharva JH guide when published -->
 </div>
 <div class="section" id="how-much-will-this-cost">
-<h2>How much will this cost?<a class="headerlink" href="#how-much-will-this-cost" title="Permalink to this headline">¶</a></h2>
+<h2>How much will this cost<a class="headerlink" href="#how-much-will-this-cost" title="Permalink to this headline">¶</a></h2>
 <p>There are many factors that go into assessing how much it will cost to deploy
 Data 8 for your course. The biggest of these are CPU and RAM that each student
 will need to have available. For details on how choices of hardware using Kubernetes affect the cost of the
 deployment, we recommend checking out the <a class="reference external" href="https://zero-to-jupyterhub.readthedocs.io/en/latest/cost.html">Zero to JupyterHub deployment costs guide</a>.</p>
-<!--- Remove when rest of guide includes TLJH -->
 </div>
-<div class="section" id="a-note-on-the-rest-of-this-guide">
-<h2>A note on the rest of this guide<a class="headerlink" href="#a-note-on-the-rest-of-this-guide" title="Permalink to this headline">¶</a></h2>
-<p>Note that while we have shown two options for deploying JupyterHub above,
-the rest of this guide will focus on <strong>deploying JupyterHub with Kubernetes</strong>.
-This is because running a JupyterHub on Kubernetes is more complex,
-and warrants more guidance. However, if you are deploying a JupyterHub on a single VM
-with The Littlest JupyterHub, you can follow along to determine the environment
-needed to run your course.</p>
-</div>
-<div class="section" id="next-step">
-<h2>Next step<a class="headerlink" href="#next-step" title="Permalink to this headline">¶</a></h2>
-<p>Now that we have a running JupyterHub, the next step is
-to <code class="xref any docutils literal notranslate"><span class="pre">customize</span> <span class="pre">your</span> <span class="pre">JupyterHub</span> <span class="pre">environment</span></code>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
+<div class="section" id="next-steps">
+<h2>Next steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
+<p>Now that we have a running JupyterHub, the next step is to choose either a customized JupyterHub with <a class="reference internal" href="tljh_customize_deployment.html"><span class="doc">The Littlest JupyterHub deployment</span></a> (for total classroom sizes &lt;50 students) or a <a class="reference internal" href="k8s_customize_hub_environment.html"><span class="doc">Kubernetes deployment</span></a> (for total classroom sizes &gt;=50 students).</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>

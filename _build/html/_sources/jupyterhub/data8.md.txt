@@ -12,8 +12,7 @@ As such, most of these components are freely available to the educational commun
 others to adopt these tools for their own uses and become contributors to
 these projects over time.
 
-The following is an outline of the technical pieces that go into running Data 8. 
-
+The following is an outline of the technical pieces that go into running Data 8.
 
 ## Managing cloud resources
 

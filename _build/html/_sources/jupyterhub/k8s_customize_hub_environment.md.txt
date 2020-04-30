@@ -27,7 +27,7 @@ steps:
 1. **Double-check the syntax of your `config.yaml` file.** For example, you may have
    copy/pasted two code snippets that both had
 
-   ```
+   ```text
    singleuser:
    ```
 
@@ -37,13 +37,13 @@ steps:
 
 2. **Deploy your change to the JupyterHub.** Use the following command:
 
-    ```
-    helm upgrade << YOUR-HUB-NAMESPACE >> jupyterhub/jupyterhub --version=<< YOUR-VERSION >> -f config.yaml
+    ```bash
+    helm upgrade <YOUR-HUB-NAMESPACE> jupyterhub/jupyterhub --version=<YOUR-VERSION> -f config.yaml
     ```
 
     This runs a "Helm Upgrade", which tells Kubernetes to update its deployment to match
-    the values that you've placed in `config.yaml`. The value in `<< YOUR-HUB-NAMESPACE >>` should
-    be whatever you chose when [creating the JupyterHub](setup_jupyterhub).
+    the values that you've placed in `config.yaml`. The value in `<YOUR-HUB-NAMESPACE>` should
+    be whatever you chose when [creating the JupyterHub](./setup_jupyterhub).
 
     Most hardware modifications to your
     Kubernetes deployment will be done in this way.
@@ -67,7 +67,7 @@ First, we'll tell the JupyterHub to connect user sessions with the
 Docker image used by Data 8. This is done by adding the following to your
 `config.yaml` file:
 
-```
+```yaml
 singleuser:
   image:
     name: berkeleydsep/datahub-user
@@ -76,7 +76,7 @@ singleuser:
 
 To deploy the change, save the file, then run a helm upgrade:
 
-```
+```bash
 helm upgrade data8 jupyterhub/jupyterhub --version=v0.6 -f config.yaml
 ```
 
@@ -96,12 +96,13 @@ how much RAM / CPU / etc. See the [Data 8 user resource configuration](https://g
 for example.
 
 ### Memory (RAM)
+
 The following snippet will give each user 1 gig of ram,
 which is the amount given to Data 8 students at Berkeley. Students will
 always have at least the amount specified in `guarantee` and their Jupyter
 server will restart if they use more than `limit`.
 
-```
+```yaml
 singleuser:
   memory:
     guarantee: 1G
@@ -112,7 +113,7 @@ singleuser:
 
 The following snippet gives students 2 gigs of persistent storage:
 
-```
+```yaml
 singleuser:
   storage:
     capacity: 2Gi
@@ -138,6 +139,7 @@ as this is a free service that is more widely-accessible than the particular
 authentication system that any one university uses.
 
 ### Authenticating with GitHub
+
 To authenticate with GitHub, take the following the steps outlined
 in the [Zero to JupyterHub Authentication Guide](https://zero-to-jupyterhub.readthedocs.io/en/latest/authentication.html#github).
 
@@ -150,7 +152,7 @@ active sessions currently on the hub, as well as perform some simple actions
 to help debug and fix student problems. To add a list of admin usernames,
 add the following to the `auth` section of your `config.yaml` file:
 
-```
+```yaml
 auth:
   admin:
     users:
@@ -166,7 +168,7 @@ If you've followed all of the instructions on this page
 (including authenticating with GitHub), your `config.yaml` file should now
 look something like this:
 
-```
+```yaml
 proxy:
   secretToken: "<< output of openssl rand -hex 32 >>"
 
@@ -201,7 +203,7 @@ take the following steps:
 
 1. Go to your JupyterHub's public IP address. You can find this address with:
 
-   ```
+   ```yaml
    kubectl --namespace=data8 get svc proxy-public
    ```
 

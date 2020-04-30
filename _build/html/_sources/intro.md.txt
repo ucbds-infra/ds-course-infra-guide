@@ -27,23 +27,23 @@ others to adopt these tools for their own uses and become contributors to these 
 
 ## Brief Outline
 
-The following is an outline of the technical pieces that go into running Data 8. It is broken down 
+The following is an outline of the technical pieces that go into running Data 8. It is broken down
 by activity/need so that it might be most useful for others hoping to accomplish the same goals.
 
 ### JupyterHub
 
 [Quick Link to Jupyterhub Intro](jupyterhub/intro)
 
-Data 8 started with 60 students in Fall 2015, and now has 1350 students as of Spring 2020. 
-The course operates on a scale and level of complexity that required several technological 
-improvements to our current teaching toolset. The Data 8 team worked closely with various 
+Data 8 started with 60 students in Fall 2015, and now has 1350 students as of Spring 2020.
+The course operates on a scale and level of complexity that required several technological
+improvements to our current teaching toolset. The Data 8 team worked closely with various
 open-source projects in order to contribute to tools that are broadly useful.
 
 ### Autograding
 
 [Quick Link to Autograding Intro](autograding/intro)
 
-Automating the grading of assignments within a Jupyter environment has been made simpler in recent 
-years with the implementation of several open-source software solutions. These strides towards 
-automated solutions save professors and instructors the long hours of grading assignments manually. 
+Automating the grading of assignments within a Jupyter environment has been made simpler in recent
+years with the implementation of several open-source software solutions. These strides towards
+automated solutions save professors and instructors the long hours of grading assignments manually.
 This chapter serves as a guide towards choosing one that best fits a course's scale and requirements.

@@ -45,14 +45,14 @@ arise, and some things the Data 8 team has learned in solving them.
 
 ### Troubleshooting JupyterHub sessions
 
-- **If the student can't log in**, suggest that they open a new
+* **If the student can't log in**, suggest that they open a new
   private browsing window in their browser, try to log in, and give
   the course staff a screenshot of the screens where it got stuck.
   You can also suggest they try a different browser.  That will often
   narrow down whether the issue is something related to their
   browser or cookies etc., or whether it is on the server end.
 
-- **If the student can log into Jupyterhub but their notebook is stuck**
+* **If the student can log into Jupyterhub but their notebook is stuck**
   (e.g., it is not responding), first try restarting their
   kernel: try `Restart Kernel` & `Re-run All` in the top
   menu.
@@ -67,7 +67,7 @@ arise, and some things the Data 8 team has learned in solving them.
   student has written code that takes too much time or memory, advise
   them on how to write more efficient code.
 
-- **If a user's session is inexplicably stuck**, try stopping and restarting their server
+* **If a user's session is inexplicably stuck**, try stopping and restarting their server
   on JupyterHub as an administrator. To do so, go to the Administrator page
   when logged in under and administrator account by clicking on the button
   to the top-right. Find the running server you'd like to restart and manually
@@ -76,7 +76,7 @@ arise, and some things the Data 8 team has learned in solving them.
 
 ### Common student confusion
 
-- **Running cells in a non-linear fashion** A common student error
+* **Running cells in a non-linear fashion** A common student error
   is to run cells in a different order than
   they appear in the notebook.  It is common for cells run "out of order" to
   cause confusion. It's good practice to recommend they
@@ -85,7 +85,8 @@ arise, and some things the Data 8 team has learned in solving them.
   then check the output from the cells to make sure everything is
   still correct.
 
-- **Saving student work**. While Jupyter periodically saves the state of
+* **Saving student work**. While Jupyter periodically saves the state of
   the Notebook over time, this occasionally doesn't happen as often as students
   expect. Remind students to `Checkpoint & Save` every so often,
   especially before submitting their assignment.
+  

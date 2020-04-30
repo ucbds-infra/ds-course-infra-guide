@@ -1,7 +1,7 @@
 # The DataHub Development Operations Process
 
 This page details the practices used by the Data 8 tech team in order to maintain and upgrade their JupyterHub, called the DataHub. The DataHub is a JupyterHub deployment using Kubernetes that provides the environment in which all
-Data 8 students work. 
+Data 8 students work.
 
 ## The DataHub deployment repository
 
@@ -26,7 +26,7 @@ time a change is made to the DataHub master repository. This is
 also used to automatically deploy these changes to the `staging`
 and `prod` DataHub deployments when new changes are made.
 
-## Modifying the DataHub 
+## Modifying the DataHub
 
 The following steps are followed by the Data 8 tech team any time
 a modification must be made to the DataHub.

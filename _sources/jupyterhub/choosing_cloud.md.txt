@@ -1,7 +1,7 @@
 <!-- #region -->
 # Choosing where your JupyterHub will run
 
-## Should I deploy on my hardware or in the cloud?
+## Should I deploy on my hardware or in the cloud
 
 The first thing you'll decide is *where* your JupyterHub will run. The first
 question to ask is "will I run my JupyterHub on my own hardware, or will I
@@ -16,7 +16,6 @@ balance of control and flexibility. We'll cover this in the following
 sections.
 
 (however, note that you can still [demo the course environment locally](deploy_locally.html))
-
 
 ## Choosing a cloud provider and service
 
@@ -43,7 +42,7 @@ With that in mind, here are a few of the most popular options for choosing your 
     to be portable to other data science environments.
   * **Cons**: There is more manual setup and maintenance for you to perform. Because the resources
     are a blank slate, you will need to take the steps to set everything up.
-    
+
 * **Use a "template" deployment to deploy a vanilla JupyterHub**. Another possibility is that
   the cloud provider has given you a single-button option to automatically deploy a JupyterHub
   that you can then customize. In this case you still need to set up the JupyterHub with the
@@ -84,13 +83,13 @@ With that in mind, here are a few of the most popular options for choosing your 
     will often ask you to pay once you need more resources (at which point you may wish you could
     switch to a different cloud provider that may be cheaper).
 
-## Is there a particular cloud provider that you recommend?
+## Is there a particular cloud provider that you recommend
 
 Not really - ultimately, the choice of cloud infrastructure is your own, and different options will be appropriate for different situations. We recommend using the following rubric to decide which cloud provider to use: **Which provider makes it the easiest and cheapest to get a vanilla JupyterHub that
 is highly customizable?** Data 8 has been run on every major cloud provider, and we intentionally
 switch providers every few semesters in order to avoid depending too much on a single vendor's services.
 
-## Where to get help?
+## Where to get help
 
 If all of this sounds daunting to you, there are a few places that you can try to get help. Here
 are a few suggestions.
@@ -110,7 +109,3 @@ are a few suggestions.
 Once you've chosen a cloud provider, your next step is to deploy your own JupyterHub! We'll
 cover how to do this in the next section.
 <!-- #endregion -->
-
-```python
-
-```

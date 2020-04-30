@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>The Educator’s Guide to Technology Infrastructure for Data 8 &#8212; The Educator’s Guide to Technology Infrastructure for Data 8</title>
+    <title>Introduction &#8212; The Data Science Educator’s Guide to Technology Infrastructure</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -27,7 +27,6 @@
     <script src="_static/sphinx-book-theme.js"></script>
     <script >var togglebuttonSelector = '.toggle, .secondtoggle, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="JupyterHub Overview" href="jupyterhub/intro.html" />
@@ -59,7 +58,7 @@
   <img src="_static/data8.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">The Educator’s Guide to Technology Infrastructure for Data 8</h1>
+  <h1 class="site-logo" id="site-title">The Data Science Educator’s Guide to Technology Infrastructure</h1>
   
 </a>
 </div>
@@ -72,21 +71,50 @@
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   
   <ul class="nav sidenav_l1">
-  <li class="active">
-    <a href="#">The Educator’s Guide to Technology Infrastructure for Data 8</a>
-  </li>
 <li class="navbar-special">
-<p class="margin-caption">Jupyterhub</p>
+<p class="margin-caption">JupyterHub</p>
 </li>
   <li class="">
     <a href="jupyterhub/intro.html">JupyterHub Overview</a>
+  </li>
+  <li class="">
+    <a href="jupyterhub/choosing_cloud.html">Choosing where your JupyterHub will run</a>
+  </li>
+  <li class="">
+    <a href="jupyterhub/setup_jupyterhub.html">Deploying JupyterHub</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="jupyterhub/tljh_customize_deployment.html">Customizing the JupyterHub environment (TLJH)</a>
+    </li>
+    <li class="">
+      <a href="jupyterhub/k8s_customize_hub_environment.html">Customizing the JupyterHub environment (Kubernetes)</a>
+    </li>
+  </ul>
+  </li>
+  <li class="">
+    <a href="jupyterhub/administering.html">Administering JupyterHub</a>
+  </li>
+  <li class="">
+    <a href="jupyterhub/jupyterhub_devops.html">The DataHub Development Operations Process</a>
+  </li>
+  <li class="">
+    <a href="jupyterhub/data8.html">The Data 8 Tech Stack @ Berkeley</a>
   </li>
 <li class="navbar-special">
 <p class="margin-caption">Autograding</p>
 </li>
   <li class="">
-    <a href="autograding/intro.html">Overview</a>
+    <a href="autograding/intro.html">Autograding Overview</a>
   </li>
+  <li class="">
+    <a href="autograding/okpy.html">OkPy</a>
+  </li>
+  <li class="">
+    <a href="autograding/otter.html">Otter Grader</a>
+  </li>
+<li class="navbar-special">
+<p class="margin-caption">Reference</p>
+</li>
   <li class="">
     <a href="faq.html">Frequently Asked Questions (FAQ)</a>
   </li>
@@ -175,13 +203,10 @@
         
               <div>
                 
-  <div class="section" id="the-educator-s-guide-to-technology-infrastructure-for-data-8">
-<h1>The Educator’s Guide to Technology Infrastructure for Data 8<a class="headerlink" href="#the-educator-s-guide-to-technology-infrastructure-for-data-8" title="Permalink to this headline">¶</a></h1>
-<p>This online resource serves as a “snapshot” of the Data 8 technology stack, and a guide for others
-that wish to adopt a Data 8 classroom environment. For a guide on the <em>pedagogical</em> and <em>curriculum</em>
-considerations, <code class="xref any docutils literal notranslate"><span class="pre">there</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">separate</span> <span class="pre">guide</span> <span class="pre">here</span></code>. This guide is written
-with all levels of technical understanding in mind, so even if you are new to creating a
-computational course, this guide is for everyone!</p>
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>This online resource serves as a a guide for others that wish to adopt a data science classroom environment, and a “snapshot” of UC Berkeley’s Data 8 technology stack. For a guide on the <em>pedagogical</em> and <em>curriculum</em> considerations, <code class="xref any docutils literal notranslate"><span class="pre">there</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">separate</span> <span class="pre">guide</span> <span class="pre">here</span></code>.</p>
+<p>This guide is written with all levels of technical understanding in mind, so even if you are new to creating a computational course, this guide is for everyone!</p>
 <div class="section" id="what-is-data-8">
 <h2>What is Data 8?<a class="headerlink" href="#what-is-data-8" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://data8.org/">Data 8</a> is a “Foundations in Data Science” course taught for first year students
@@ -189,7 +214,7 @@ at UC Berkeley. It combines principles/skills in statistics, programming, infere
 hypothesis testing, visualization, and exploration. It provides a foundation in the many fields
 encompassed by “data science”, and gives students a practical introduction to the field. For a
 more in-depth description of the topics taught, please reference the separate
-<code class="xref any docutils literal notranslate"><span class="pre">pedagogy</span> <span class="pre">guide</span></code>.</p>
+<a class="reference external" href="http://data8.org/zero-to-data-8/teaching/README.html">pedagogy guide</a>.</p>
 <p>Creating a data science course from first-principles requires considerable
 advances in the technology available to instructors. In creating Data 8, the
 development team has worked closely with members of the open-source community,
@@ -218,6 +243,8 @@ open-source projects in order to contribute to tools that are broadly useful.</p
 years with the implementation of several open-source software solutions. These strides towards
 automated solutions save professors and instructors the long hours of grading assignments manually.
 This chapter serves as a guide towards choosing one that best fits a course’s scale and requirements.</p>
+<div class="toctree-wrapper compound">
+</div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">

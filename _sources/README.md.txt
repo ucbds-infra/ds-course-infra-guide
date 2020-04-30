@@ -3,4 +3,4 @@
 
 ## License
 
-This guide is created under the [BSD-3](#) License.
+This guide is created under the [BSD-3](https://opensource.org/licenses/BSD-3-Clause) License.

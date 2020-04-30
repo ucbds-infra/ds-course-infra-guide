@@ -1,4 +1,4 @@
-![dsep-logo](./images/dsep-logo.png =75x)
+<img src ="./images/dsep-logo.png" alt="dsep logo" width="75"/>
 
 # The Data Science Educator’s Guide to Technology Infrastructure
 

@@ -56,7 +56,7 @@
     <div class="navbar-brand-box">
 <a class="navbar-brand text-wrap" href="../index.html">
   
-  <img src="../_static/data8.png" class="logo" alt="logo">
+  <img src="../_static/dsep-logo.png" class="logo" alt="logo">
   
   
   <h1 class="site-logo" id="site-title">The Data Science Educator’s Guide to Technology Infrastructure</h1>
@@ -364,13 +364,15 @@ a memory limit of 80-90% of total physical memory. This prevents one user from b
 <p>Once resources have been reallocated, you must tell TLJH to make use of these resources, and verify that the resources have become available.</p>
 <div class="section" id="verifying-a-resize">
 <h4>Verifying a Resize<a class="headerlink" href="#verifying-a-resize" title="Permalink to this headline">¶</a></h4>
-<ol>
+<ol class="simple">
 <li><p>Once you have resized your server, tell the JupyterHub to make use of these new resources. To accomplish this, follow the instructions in  <a class="reference external" href="https://tljh.jupyter.org/en/latest/topic/tljh-config.html#topic-tljh-config">Configuring TLJH with tljh-config</a>  to set new memory or CPU limits and reload the hub. This can be completed using the terminal in the JupyterHub (or via SSH-ing into your VM and using this terminal).</p></li>
 <li><p>TLJH configuration options can be verified by viewing the tljh-config output.
 <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">tljh-config</span> <span class="pre">show</span></code>
 Double-check that your changes are reflected in the output.</p></li>
-<li><p><strong>To verify changes to memory</strong>, confirm that it worked by starting a new server (if you had one previously running, click “Control Panel -&gt; Stop My Server” to shut down your active server first), opening a notebook, and checking the value of the  <a class="reference external" href="https://github.com/yuvipanda/nbresuse">nbresuse</a>  extension in the upper-right.
-<img alt="nbresuse demonstration" src="https://tljh.jupyter.org/en/latest/_images/nbresuse.png" /></p></li>
+<li><p><strong>To verify changes to memory</strong>, confirm that it worked by starting a new server (if you had one previously running, click “Control Panel -&gt; Stop My Server” to shut down your active server first), opening a notebook, and checking the value of the  <a class="reference external" href="https://github.com/yuvipanda/nbresuse">nbresuse</a>  extension in the upper-right.</p></li>
+</ol>
+<p><img alt="nbresuse demonstration" src="https://tljh.jupyter.org/en/latest/_images/nbresuse.png" /></p>
+<ol>
 <li><p><strong>To verify changes to CPU</strong>, use the  <code class="docutils literal notranslate"><span class="pre">nproc</span></code>  from a terminal. This command displays the number of available cores, and should be equal to the number of cores you selected in your provider’s interface.
 <code class="docutils literal notranslate"><span class="pre">nproc</span> <span class="pre">--all</span></code></p></li>
 <li><p><strong>To verify currently-available disk space</strong>, use the  <code class="docutils literal notranslate"><span class="pre">df</span></code>  command in a terminal. This shows how much disk space is available. The  <code class="docutils literal notranslate"><span class="pre">-hT</span></code>  argument allows us to have this printed in a human readable format, and condenses the output to show one storage volume. Note that currently you cannot change the disk space on a per-user basis.</p>

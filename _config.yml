@@ -1,7 +1,7 @@
 # Book settings
 title: The Data Science Educator’s Guide to Technology Infrastructure
 author: UC Berkeley Data Science Education Program
-logo: 'images/data8.png'
+logo: 'images/dsep-logo.png'
 
 html:
   home_page_in_navbar: false

@@ -1,8 +1,10 @@
-# Introduction
+# The Educator's Guide to Technology Infrastructure for Data 8
 
-This online resource serves as a a guide for others that wish to adopt a data science classroom environment, and a "snapshot" of UC Berkeley's Data 8 technology stack. For a guide on the *pedagogical* and *curriculum* considerations, [there is a separate guide here](../v1/teaching/inspiration).
-
-This guide is written with all levels of technical understanding in mind, so even if you are new to creating a computational course, this guide is for everyone!
+This online resource serves as a "snapshot" of the Data 8 technology stack, and a guide for others
+that wish to adopt a Data 8 classroom environment. For a guide on the *pedagogical* and *curriculum* 
+considerations, [there is a separate guide here](../v1/teaching/inspiration). This guide is written 
+with all levels of technical understanding in mind, so even if you are new to creating a 
+computational course, this guide is for everyone!
 
 [comment]: <> (TODO: A reminder to change the link above once the new guide is created and finished.)
 
@@ -13,7 +15,7 @@ at UC Berkeley. It combines principles/skills in statistics, programming, infere
 hypothesis testing, visualization, and exploration. It provides a foundation in the many fields
 encompassed by "data science", and gives students a practical introduction to the field. For a 
 more in-depth description of the topics taught, please reference the separate 
-[pedagogy guide](http://data8.org/zero-to-data-8/teaching/README.html).
+[pedagogy guide](../v1/teaching/curriculum).
 
 Creating a data science course from first-principles requires considerable
 advances in the technology available to instructors. In creating Data 8, the

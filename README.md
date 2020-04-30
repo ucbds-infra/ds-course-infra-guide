@@ -1,4 +1,4 @@
-![dsep-logo](./images/dsep-logo.png)
+![dsep-logo](./images/dsep-logo.png =75x)
 
 # The Data Science Educator’s Guide to Technology Infrastructure
 

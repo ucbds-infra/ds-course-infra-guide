@@ -1,3 +1,5 @@
+![dsep-logo](./images/dsep-logo.png)
+
 # The Data Science Educator’s Guide to Technology Infrastructure
 
 This online resource serves as a a guide for others that wish to adopt a data science classroom environment, and a "snapshot" of UC Berkeley's Data 8 technology stack. For a guide on the pedagogical and curriculum considerations, there is a [separate guide here](http://data8.org/zero-to-data-8/teaching/README.html).

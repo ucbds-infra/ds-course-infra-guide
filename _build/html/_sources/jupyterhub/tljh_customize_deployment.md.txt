@@ -113,8 +113,7 @@ Once resources have been reallocated, you must tell TLJH to make use of these re
     `sudo tljh-config show`
   Double-check that your changes are reflected in the output.
 3. **To verify changes to memory**, confirm that it worked by starting a new server (if you had one previously running, click “Control Panel -> Stop My Server” to shut down your active server first), opening a notebook, and checking the value of the  [nbresuse](https://github.com/yuvipanda/nbresuse)  extension in the upper-right.
-![nbresuse demonstration](https://tljh.jupyter.org/en/latest/_images/nbresuse.png)
-
+  ![nbresuse demonstration](https://tljh.jupyter.org/en/latest/_images/nbresuse.png)
 4. **To verify changes to CPU**, use the  `nproc`  from a terminal. This command displays the number of available cores, and should be equal to the number of cores you selected in your provider’s interface.
       `nproc --all`
 5. **To verify currently-available disk space**, use the  `df`  command in a terminal. This shows how much disk space is available. The  `-hT`  argument allows us to have this printed in a human readable format, and condenses the output to show one storage volume. Note that currently you cannot change the disk space on a per-user basis.

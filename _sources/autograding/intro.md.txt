@@ -1,4 +1,4 @@
-# Overview
+# Autograding Overview
 
 Autograding is an essential part of any scalable computation-centered course. It allows instructors to easily and efficiently grade swathes of student submissions, and also lets students have a way to check their progress and ensure they're heading the right direction. There are many different options for autograding depending on the scale and requirements of your course, from those that run entirely on the instructor's machine to those that utilize a server that grades students' assignments on submission.
 

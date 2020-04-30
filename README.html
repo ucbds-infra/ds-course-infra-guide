@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Markdown files &#8212; The Educator’s Guide to Technology Infrastructure for Data 8</title>
+    <title>The Data Science Educator’s Guide to Technology Infrastructure &#8212; The Data Science Educator’s Guide to Technology Infrastructure</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -27,7 +27,6 @@
     <script src="_static/sphinx-book-theme.js"></script>
     <script >var togglebuttonSelector = '.toggle, .secondtoggle, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
 
@@ -58,7 +57,7 @@
   <img src="_static/data8.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">The Educator’s Guide to Technology Infrastructure for Data 8</h1>
+  <h1 class="site-logo" id="site-title">The Data Science Educator’s Guide to Technology Infrastructure</h1>
   
 </a>
 </div>
@@ -71,21 +70,50 @@
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="intro.html">The Educator’s Guide to Technology Infrastructure for Data 8</a>
-  </li>
 <li class="navbar-special">
-<p class="margin-caption">Jupyterhub</p>
+<p class="margin-caption">JupyterHub</p>
 </li>
   <li class="">
     <a href="jupyterhub/intro.html">JupyterHub Overview</a>
+  </li>
+  <li class="">
+    <a href="jupyterhub/choosing_cloud.html">Choosing where your JupyterHub will run</a>
+  </li>
+  <li class="">
+    <a href="jupyterhub/setup_jupyterhub.html">Deploying JupyterHub</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="jupyterhub/tljh_customize_deployment.html">Customizing the JupyterHub environment (TLJH)</a>
+    </li>
+    <li class="">
+      <a href="jupyterhub/k8s_customize_hub_environment.html">Customizing the JupyterHub environment (Kubernetes)</a>
+    </li>
+  </ul>
+  </li>
+  <li class="">
+    <a href="jupyterhub/administering.html">Administering JupyterHub</a>
+  </li>
+  <li class="">
+    <a href="jupyterhub/jupyterhub_devops.html">The DataHub Development Operations Process</a>
+  </li>
+  <li class="">
+    <a href="jupyterhub/data8.html">The Data 8 Tech Stack @ Berkeley</a>
   </li>
 <li class="navbar-special">
 <p class="margin-caption">Autograding</p>
 </li>
   <li class="">
-    <a href="autograding/intro.html">Overview</a>
+    <a href="autograding/intro.html">Autograding Overview</a>
   </li>
+  <li class="">
+    <a href="autograding/okpy.html">OkPy</a>
+  </li>
+  <li class="">
+    <a href="autograding/otter.html">Otter Grader</a>
+  </li>
+<li class="navbar-special">
+<p class="margin-caption">Reference</p>
+</li>
   <li class="">
     <a href="faq.html">Frequently Asked Questions (FAQ)</a>
   </li>
@@ -119,7 +147,7 @@
                 <!-- ipynb file if we had a myst markdown file -->
                 
                 <!-- Download raw file -->
-                <a class="dropdown-buttons" href="_sources/markdown.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
+                <a class="dropdown-buttons" href="_sources/README.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
                 <!-- Download PDF via print -->
                 <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
             </div>
@@ -138,9 +166,16 @@
         
     </div>
     <div class="d-none d-md-block col-md-2 bd-toc show">
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
 
 <nav id="bd-toc-nav">
     <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#license" class="nav-link">License</a>
+        </li>
     
     </ul>
 </nav>
@@ -153,21 +188,12 @@
         
               <div>
                 
-  <div class="section" id="markdown-files">
-<h1>Markdown files<a class="headerlink" href="#markdown-files" title="Permalink to this headline">¶</a></h1>
-<p>Jupyter Book allows you to write your content directly in markdown files.
-If you’d like to include computational content with these markdown files,
-use the following directive:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{execute}
-print(&quot;Here is some code to execute&quot;)
-```
-</pre></div>
+  <div class="section" id="the-data-science-educators-guide-to-technology-infrastructure">
+<h1>The Data Science Educator’s Guide to Technology Infrastructure<a class="headerlink" href="#the-data-science-educators-guide-to-technology-infrastructure" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>This guide is created under the <code class="xref any docutils literal notranslate"><span class="pre">BSD-3</span></code> License.</p>
 </div>
-<p>When your book is build, the contents of any <code class="docutils literal notranslate"><span class="pre">{execute}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<p>For more information about executing computational content with Jupyter Book,
-see <a class="reference external" href="https://myst-nb.readthedocs.io/">The MyST-NB documentation</a>.</p>
 </div>
 
 

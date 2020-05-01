@@ -1,6 +1,10 @@
 # Otter Grader
 
-![otter-logo](./images/gradient-otter-color.png)
+```{figure} ./images/gradient-otter-color.png
+---
+height: 175px
+name: otter-logo
+```
 
 [Otter](https://otter-grader.readthedocs.io) is a light-weight scalable autograding tool that allows instructors to customize their grading methodology. It is a command line tool divded into four tools that span the assignment generation and grading process: Otter Assign, Otter Generate, Otter Check, and Otter Grade.
 

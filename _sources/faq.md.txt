@@ -2,7 +2,7 @@
 
 The following section contains some frequently asked questions around deploying
 Data 8 with JupyterHub. If you have a question that isn't answered, feel free
-to [open an issue on the Z2D8 github repository](https://github.com/data-8/zero-to-data-8/issues).
+to [open an issue on the Z2D8 github repository](https://github.com/ucbds-infra/ds-course-infra-guide/issues).
 
 ## How can I deploy a JupyterHub on hardware that isn't listed in this guide?
 

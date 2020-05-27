@@ -2,6 +2,8 @@
 
 # The Data Science Educator’s Guide to Technology Infrastructure
 
+![zenodo badge](https://zenodo.org/badge/DOI/10.5281/zenodo.3858478.svg)
+
 This online resource serves as a a guide for others that wish to adopt a data science classroom environment, and a "snapshot" of UC Berkeley's Data 8 technology stack. For a guide on the pedagogical and curriculum considerations, there is a [separate guide here](http://data8.org/zero-to-data-8/teaching/README.html).
 
 This guide is written with all levels of technical understanding in mind, so even if you are new to creating a computational course, this guide is for everyone!

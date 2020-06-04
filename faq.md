@@ -10,8 +10,8 @@ These guides focus on deploying JupyterHub on large cloud providers such as
 Microsoft, Google, and Amazon. However, many organizations prefer to deploy on
 something other than this (e.g. their own local hardware).
 
-You can deploy a JupyterHub on any hardware, though it must run Kubernetes. 
-Setting up Kubernetes is not trivial, so we recommend cloud providers 
+You can deploy a JupyterHub on any hardware, though it must run Kubernetes.
+Setting up Kubernetes is not trivial, so we recommend cloud providers
 as they simplify this process significantly. If there's a specific provider
 or setup that you *think* should be officially documented, please reach out and we can discuss!
 
@@ -22,4 +22,3 @@ For courses of 50 or less students we recommend
 
 For courses of more than 50 students we recommend the
 [**Zero to JupyterHub for Kubernetes**](https://zero-to-jupyterhub.readthedocs.io/en/latest/) guide.
-

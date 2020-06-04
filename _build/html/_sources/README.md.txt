@@ -10,6 +10,11 @@ This guide is written with all levels of technical understanding in mind, so eve
 
 This guide is maintained by the members of UC Berkeley's Data Science Education Program (DSEP), which was adopted from the contents of v1 of the [Zero to Data 8](https://github.com/data-8/zero-to-data-8) guide.
 
+If you'd like to make a change or notice any missing content, please submit a [Github Issue](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue) to this repository!
+
+## Versioning
+The current version of this book runs on [Jupyter Book](https://github.com/executablebooks/jupyter-book) version [v0.7.0b1](https://github.com/executablebooks/jupyter-book/releases)
+
 ## License
 
 This guide is created under the [BSD-3](https://opensource.org/licenses/BSD-3-Clause) License.

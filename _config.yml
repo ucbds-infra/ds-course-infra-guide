@@ -4,7 +4,8 @@ author: UC Berkeley Data Science Education Program
 logo: 'images/dsep-logo.png'
 
 html:
-  home_page_in_navbar: false
+  favicon: "images/dsep-logo-transparent.png"
+  home_page_in_navbar: true
 
 latex:
   latex_documents:

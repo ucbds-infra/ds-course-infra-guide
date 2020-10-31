@@ -20,7 +20,7 @@ different JupyterHub deployment.
 * `prod` lives at [datahub.berkeley.edu](datahub.berkeley.edu). It is the
   JupyterHub that students use, and as such has higher standards for stability.
 
-The DataHub uses [Travis CI](https://travis-ci.org/) (short for
+The DataHub uses [CircleCI](https://circleci.com/) (short for
 "continuous integration") to automatically run tests and code every
 time a change is made to the DataHub master repository. This is
 also used to automatically deploy these changes to the `staging`
@@ -38,14 +38,14 @@ a modification must be made to the DataHub.
   usually something like modifying the [DataHub helm chart](https://github.com/berkeley-dsep-infra/datahub/blob/staging/datahub/config.yaml) or editing the [DataHub Docker Image](https://hub.docker.com/u/berkeleydsep/)).
 5. Commit your changes and create a pull request. The pull request
   should be against **`staging`**, not against `prod`.
-6. The pull request will trigger a Travis CI process, and
+6. The pull request will trigger a CI process, and
   potentially a rebuild of docker images depending on what
   modifications have been proposed.
 7. Once the CI process is complete and if there are no problems, the committer requests that someone review the PR before merging.
 8. If all looks well, merge the PR into `staging`. This will trigger
-  another Travis step which automatically upgrades the
+  another CI step which automatically upgrades the
   DataHub deployment at `staging.datahub.berkeley.edu`.
-9. After this upgrade finishes (per the logs in Travis CI), the team
+9. After this upgrade finishes (per the logs in CI), the team
   tests the changes by performing actions on
   `staging.datahub.berkeley.edu` (e.g., trying to import
     a package that was added)
@@ -54,7 +54,7 @@ a modification must be made to the DataHub.
   the GitHub UI and debug before submitting another PR to `staging`.
 11. If the change passes tests and looks successful on `staging`, create
   a **new PR** to merge `staging` into `prod`. This will trigger
-  a similar Travis process to deploy to `prod` at
+  a similar CI process to deploy to `prod` at
   [datahub.berkeley.edu](datahub.berkeley.edu).
   Test your change on production for good measure.
 12. Celebrate!

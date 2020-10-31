@@ -40,7 +40,7 @@ Managing these resources primarily utilizes the following pieces of open-source 
 
 * **Admin access to the DataHub** - The Data 8 team often required access to a high-level view of the DataHub, as well as access to commands that created/destroyed user sessions. This is provided by the **Admin Panel** of JupyterHub, which allows a subset of users to control operations of the DataHub resources.
 
-* **Deploying and updating the DataHub** - While the DataHub is a complicated piece of technology, running it, maintaining it, and updating it should be doable by people without strong technical operations skills. Data 8 uses GitHub repositories to store all configuration scripts for the DataHub, and uses Travis Continuous Integration to automatically deploy changes to the configuration. As a result, updating the cluster is as simple as changing a configuration file and waiting for the changes to propagate.
+* **Deploying and updating the DataHub** - While the DataHub is a complicated piece of technology, running it, maintaining it, and updating it should be doable by people without strong technical operations skills. Data 8 uses GitHub repositories to store all configuration scripts for the DataHub, and uses CircleCI Continuous Integration to automatically deploy changes to the configuration. As a result, updating the cluster is as simple as changing a configuration file and waiting for the changes to propagate.
 
 * **Scaling cloud resources** - An **autoscaler** is used to ensure that Data 8 is only requesting the cloud resources that it needs. Kubernetes makes it easy to scale up/down relatively quickly. This is configured with a script that is cloud-specific for now, but will become possible using only Kubernetes in the future.
 
